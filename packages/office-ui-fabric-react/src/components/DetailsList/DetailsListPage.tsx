@@ -27,6 +27,9 @@ const DetailsListGroupedExampleCode = require('!raw-loader!office-ui-fabric-reac
 import { DetailsListDragDropExample } from './examples/DetailsList.DragDrop.Example';
 const DetailsListDragDropExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/DetailsList/examples/DetailsList.DragDrop.Example.tsx') as string;
 
+import { DetailsListDragDropExampleNoMin } from './examples/DetailsList.DragDrop.ExampleNoMin';
+const DetailsListDragDropExampleNoMinCode = require('!raw-loader!office-ui-fabric-react/src/components/DetailsList/examples/DetailsList.DragDrop.ExampleNoMin.tsx') as string;
+
 export class DetailsListPage extends React.Component<IComponentDemoPageProps, {}> {
   public render() {
     return (
@@ -55,6 +58,9 @@ export class DetailsListPage extends React.Component<IComponentDemoPageProps, {}
             </ExampleCard>
             <ExampleCard title='Drag and Drop DetailsList with 10 items' isOptIn={ true } code={ DetailsListDragDropExampleCode }>
               <DetailsListDragDropExample />
+            </ExampleCard>
+            <ExampleCard title='Drag and Drop DetailsList with 10 items with no minimum drag distance' isOptIn={ true } code={ DetailsListDragDropExampleNoMinCode }>
+              <DetailsListDragDropExampleNoMin />
             </ExampleCard>
           </div>
         }

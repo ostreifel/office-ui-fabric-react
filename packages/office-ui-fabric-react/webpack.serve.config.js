@@ -1,4 +1,4 @@
-let path = require('path');
+blet path = require('path');
 let WebpackNotifierPlugin = require('webpack-notifier');
 
 const PACKAGE_NAME = require('./package.json').name;
